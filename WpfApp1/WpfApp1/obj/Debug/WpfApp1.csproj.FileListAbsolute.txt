@@ -1,0 +1,29 @@
+c:\users\cetecom\documents\visual studio 2017\Projects\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csprojResolveAssemblyReference.cache
+c:\users\cetecom\documents\visual studio 2017\Projects\WpfApp1\WpfApp1\obj\Debug\MainWindow.g.cs
+c:\users\cetecom\documents\visual studio 2017\Projects\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+c:\users\cetecom\documents\visual studio 2017\Projects\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+c:\users\cetecom\documents\visual studio 2017\Projects\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+c:\users\cetecom\documents\visual studio 2017\Projects\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe.config
+c:\users\cetecom\documents\visual studio 2017\Projects\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe
+c:\users\cetecom\documents\visual studio 2017\Projects\WpfApp1\WpfApp1\bin\Debug\WpfApp1.pdb
+c:\users\cetecom\documents\visual studio 2017\Projects\WpfApp1\WpfApp1\obj\Debug\MainWindow.baml
+c:\users\cetecom\documents\visual studio 2017\Projects\WpfApp1\WpfApp1\obj\Debug\WpfApp1.g.resources
+c:\users\cetecom\documents\visual studio 2017\Projects\WpfApp1\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+c:\users\cetecom\documents\visual studio 2017\Projects\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.Cache
+c:\users\cetecom\documents\visual studio 2017\Projects\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
+c:\users\cetecom\documents\visual studio 2017\Projects\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\CETECOM\Downloads\Projects\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\CETECOM\Downloads\Projects\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\CETECOM\Downloads\Projects\WpfApp1\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\CETECOM\Downloads\Projects\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+C:\Users\CETECOM\Downloads\Projects\WpfApp1\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\CETECOM\Downloads\Projects\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+C:\Users\CETECOM\Downloads\Projects\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\CETECOM\Downloads\Projects\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\CETECOM\Downloads\Projects\WpfApp1\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\CETECOM\Downloads\Projects\WpfApp1\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\CETECOM\Downloads\Projects\WpfApp1\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\CETECOM\Downloads\Projects\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\CETECOM\Downloads\Projects\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\CETECOM\Downloads\Projects\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\CETECOM\Downloads\Projects\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb

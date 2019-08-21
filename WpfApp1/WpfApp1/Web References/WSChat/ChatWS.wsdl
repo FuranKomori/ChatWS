@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ObtenerMensajes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Receptor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerMensajesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerMensajesResult" type="tns:ArrayOfMensajeDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfMensajeDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MensajeDTO" nillable="true" type="tns:MensajeDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MensajeDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Receptor" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Emisor" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mensaje" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GuardaMensaje">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="tns:MensajeDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GuardaMensajeResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ObtenerMensajesSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerMensajes" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerMensajesSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerMensajesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GuardaMensajeSoapIn">
+    <wsdl:part name="parameters" element="tns:GuardaMensaje" />
+  </wsdl:message>
+  <wsdl:message name="GuardaMensajeSoapOut">
+    <wsdl:part name="parameters" element="tns:GuardaMensajeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ChatWSSoap">
+    <wsdl:operation name="ObtenerMensajes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el mensaje final</wsdl:documentation>
+      <wsdl:input message="tns:ObtenerMensajesSoapIn" />
+      <wsdl:output message="tns:ObtenerMensajesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GuardaMensaje">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el mensaje final</wsdl:documentation>
+      <wsdl:input message="tns:GuardaMensajeSoapIn" />
+      <wsdl:output message="tns:GuardaMensajeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ChatWSSoap" type="tns:ChatWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObtenerMensajes">
+      <soap:operation soapAction="http://tempuri.org/ObtenerMensajes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuardaMensaje">
+      <soap:operation soapAction="http://tempuri.org/GuardaMensaje" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ChatWSSoap12" type="tns:ChatWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObtenerMensajes">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerMensajes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuardaMensaje">
+      <soap12:operation soapAction="http://tempuri.org/GuardaMensaje" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ChatWS">
+    <wsdl:port name="ChatWSSoap" binding="tns:ChatWSSoap">
+      <soap:address location="http://localhost:49791/ChatWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ChatWSSoap12" binding="tns:ChatWSSoap12">
+      <soap12:address location="http://localhost:49791/ChatWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
